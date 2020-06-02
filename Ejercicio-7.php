@@ -40,7 +40,7 @@ if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
 {
     echo "<h3> Validado </h3>";
     $numeroprimo= (int) $_GET['numero'];
-    echo "<h1>$numeroprimo</h1>"
+    echo "<h1>$numeroprimo</h1>";
 
 }
 else
