@@ -12,13 +12,35 @@ header ("Content-type: text/html;charset =\"utf-8\"");
 hasta el lado del servidor*/
 echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
+//  Funncion Primo
 
-//echo "<h1>".$_GET ['nombre']."</h1>";
-//echo "<h2>".$_GET ['apellido']."</h2>";
+function primo('numero')
+{
+    $contador=0;
+
+    for ($i=2;$i<='numero';$i++)
+
+    {
+        if(++$contador>1)
+        return false;
+
+    }
+}
+return true;
+}
+// Fin Funcion 
+
+
+
+
+
+
 
 if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
 {
     echo "<h3> Validado </h3>";
+    $numeroprimo= (int) $_GET['numero'];
+    echo "<h1>$numeroprimo</h1>"
 
 }
 else
