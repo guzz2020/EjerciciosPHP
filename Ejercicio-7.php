@@ -13,21 +13,20 @@ hasta el lado del servidor*/
 echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
 
-function primo($numeroprimo)
+function primo($numero)
 {
     $contador=0;
 
-    for ($i=2;$i<=$numeroprimo;$i++)
+    for ($i=2;$i<=$numero;$i++)
 
     {
-        if($numeroprimo%$i==0)
+        if($numero%$i==0)
         {
         if(++$contador>1)
         return false;
         }
 
     }
-}
 return true;
 }
 
