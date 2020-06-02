@@ -13,33 +13,12 @@ hasta el lado del servidor*/
 echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
 
-
-
-if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
-{
-    echo "<h3> Validado </h3>";
-    $numeroprimo= (int) $_GET['numero'];
-    echo "<h1>$numeroprimo</h1>";
-if (primo($numeroprimo)){
-
-    echo "Es un NUMERO PRIMO";
-}
-else
-{
-echo "NO";   
-}
-}
-else
-{
-    echo "<h3> No es un numero valido</h3>";
-}
 //  Funncion Primo
-
-function primo($numero)
+function primo($numeroprimo)
 {
     $contador=0;
 
-    for ($i=2;$i<=$numero;$i++)
+    for ($i=2;$i<=$numeroprimo;$i++)
 
     {
         if(++$contador>1)
@@ -50,6 +29,27 @@ function primo($numero)
 return true;
 }
 // Fin Funcion 
+
+
+if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
+{
+    echo "<h3> Validado </h3>";
+    $numeroprimo= (int) $_GET['numero'];
+    echo "<h1>$numeroprimo</h1>";
+    if (primo($numeroprimo))
+        {
+        echo "Es un NUMERO PRIMO";
+        }
+    else
+        {
+        echo "NO";   
+        }
+}
+else
+{
+    echo "<h3> No es un numero valido</h3>";
+}
+
 
 
 
