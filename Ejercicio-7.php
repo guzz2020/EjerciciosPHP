@@ -18,7 +18,7 @@ echo "<h2>".$_GET ['periodo']."</h2>";
 
 if (is_int ($_GET['numero']) && $_GET ['numero']>=0)
 {
-    echo "<h3> Bienvenido ".$_GET['nombre']. " ".$_GET['apellido']."</h3>";
+    echo "<h3> Validado </h3>";
 
 }
 else
@@ -29,9 +29,8 @@ else
 ?>
 
 <form>
-Escribe tu nombre completo:
-<input name="nombre" type="text" placeholder="Escribe nombres" >
-<input name="apellido" type="text" placeholder="Escribe apellidos" >
+Escribe un numero:
+
 <input name="numero" type="text" placeholder="Ingrese numero" >
 <input type="submit" value="Evaluar">
 </form>
