@@ -13,10 +13,10 @@ hasta el lado del servidor*/
 echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
 
-echo "<h1>".$_GET ['nombre']."</h1>";
-echo "<h2>".$_GET ['apellido']."</h2>";
+//echo "<h1>".$_GET ['nombre']."</h1>";
+//echo "<h2>".$_GET ['apellido']."</h2>";
 
-if (is_numeric($_GET['numero']) && $_GET ['edad']>=1)
+if (is_numeric($_GET['numero']) && $_GET ['numero']>=0)
 {
     echo "<h3> Bienvenido ".$_GET['nombre']. " ".$_GET['apellido']."</h3>";
 
@@ -32,7 +32,7 @@ else
 Escribe tu nombre completo:
 <input name="nombre" type="text" placeholder="Escribe nombres" >
 <input name="apellido" type="text" placeholder="Escribe apellidos" >
-<input name="numero" type="text" placeholder="Escribe Edad" >
+<input name="numero" type="text" placeholder="Ingrese numero" >
 <input type="submit" value="Evaluar">
 </form>
 
