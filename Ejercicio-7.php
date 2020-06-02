@@ -16,7 +16,7 @@ echo "<h2>".$_GET ['periodo']."</h2>";
 //echo "<h1>".$_GET ['nombre']."</h1>";
 //echo "<h2>".$_GET ['apellido']."</h2>";
 
-if (is_numeric($_GET['numero']) && $_GET ['numero']>=0)
+if (is_int ($_GET['numero']) && $_GET ['numero']>=0)
 {
     echo "<h3> Bienvenido ".$_GET['nombre']. " ".$_GET['apellido']."</h3>";
 
