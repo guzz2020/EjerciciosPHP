@@ -26,7 +26,7 @@ if (primo($numeroprimo)){
 }
 else
 {
-echo "NO"    
+echo "NO";   
 }
 }
 else
