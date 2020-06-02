@@ -20,8 +20,11 @@ function primo($numeroprimo)
     for ($i=2;$i<=$numeroprimo;$i++)
 
     {
+        if($numeroprimo%$i==0)
+        {
         if(++$contador>1)
         return false;
+        }
 
     }
 }
