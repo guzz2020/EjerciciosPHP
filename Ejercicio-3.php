@@ -9,8 +9,8 @@
 
     echo "<p>  Contenido del elemento 2 del arreglo: $miarreglo[2]</p>";
     echo "<p> Despliega el contenido del arreglo: </p>";
-    print_r ($miarreglo)// Se utiliza esta funcion para ver de forma entendible el arreglo
-    echo " <p> El tamaño del arreglo es: </p>";
+    print_r ($miarreglo);// Se utiliza esta funcion para ver de forma entendible el arreglo
+    echo " <p> El tamaño del arreglo es:" .sizeof($miarreglo)  "</p>";
 
     $miFechaArr["dia"]= "Lunes";
     $miFechaArr["mes"]= "Junio";
