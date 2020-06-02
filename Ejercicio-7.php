@@ -14,7 +14,7 @@ echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
 //  Funncion Primo
 
-function primo('numero')
+/*function primo('numero')
 {
     $contador=0;
 
@@ -29,7 +29,7 @@ function primo('numero')
 return true;
 }
 // Fin Funcion 
-
+*/
 
 
 
