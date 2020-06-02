@@ -44,7 +44,7 @@ if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
         }
     else
         {
-        echo "NO";   
+        echo "NO ES UN NUMERO PRIMO";   
         }
 }
 else
