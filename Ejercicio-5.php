@@ -32,7 +32,8 @@ echo "<p>   CICLO WHILE </p>";
 $n =0; //el contador de posicion 
  while ($n < count($familia)){
      $n++; //aumenta en uno cada vez que pasa el ciclo
-     echo $familia[$n]. "br />";
+     echo $familia[$n];
+     echo "<br>";
  }
 ?>
 </body>
