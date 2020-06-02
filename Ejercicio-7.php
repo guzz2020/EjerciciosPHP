@@ -16,7 +16,7 @@ echo "<h2>".$_GET ['periodo']."</h2>";
 //echo "<h1>".$_GET ['nombre']."</h1>";
 //echo "<h2>".$_GET ['apellido']."</h2>";
 
-if (ctype_digit($_GET['numero']) && $_GET ['numero']>=0)
+if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
 {
     echo "<h3> Validado </h3>";
 
