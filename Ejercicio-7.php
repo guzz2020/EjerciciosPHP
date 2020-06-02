@@ -13,7 +13,6 @@ hasta el lado del servidor*/
 echo "<h1>".$_GET ['clase']."</h1>";
 echo "<h2>".$_GET ['periodo']."</h2>";
 
-/*  Funncion Primo
 function primo($numeroprimo)
 {
     $contador=0;
@@ -28,7 +27,7 @@ function primo($numeroprimo)
 }
 return true;
 }
-*/ 
+
 
 
 if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
@@ -36,9 +35,9 @@ if (ctype_digit($_GET['numero']) && $_GET ['numero']>0)
     echo "<h3> Validado </h3>";
     $numeroprimo= (int) $_GET['numero'];
     echo "<h1>$numeroprimo</h1>";
-    $numeroprimo=1;
-   // if (primo($numeroprimo))
-   if($numeroprimo=1)
+    $numeroprimo=5;
+    if (primo($numeroprimo))
+   //if($numeroprimo=1)
         {
         echo "Es un NUMERO PRIMO";
         }
