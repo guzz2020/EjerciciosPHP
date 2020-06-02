@@ -27,13 +27,13 @@ for($i=0;$i<=sizeof($familia);$i++)
     echo "<br>";
 }
   
-/*Agregando el ciclo while
+//Agregando el ciclo while
+echo "<p>   CICLO WHILE </p>";
 $n =0; //el contador de posicion 
  while ($n < count($familia)){
      $++; //aumenta en uno cada vez que pasa el ciclo
      echo $familia[$n]. "br />";
  }
-*/
 ?>
 </body>
 </html>
