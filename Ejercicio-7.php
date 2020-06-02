@@ -2,34 +2,37 @@
 <html>
 <body>
 
-<h1>Ejercicio 7.1</h1>
+<h1>Ejercicio 7.2</h1>
 <?php
 
-// EJERCICIO 7
+// Este ejercicio corresponde a utilizacion de Formularios en PHP
 header ("Content-type: text/html;charset =\"utf-8\"");
 
-/*EVALUAR SI UN NUMERO ES:
- PRIMO O NO */
- if (is_numeric($_GET['numero']) && $_GET ['numero']=1)
- echo "<h3> ES UN NUMERO PRIMO</h3>";
- else
- $contador=0;
- for ($i=0;$i<='numero';$i++)
- {
-     if ('numero'%$i==0)
-     $contador =$contador + 1;
- }
- 
- if ($contador > 2) 
- echo "<h3> ES UN NUMERO PRIMO</h3>";
- else
- echo "<h3> NO ES UN NUMERO PRIMO</h3>";
+/*Enviar informacion del navegador 
+hasta el lado del servidor*/
+echo "<h1>".$_GET ['clase']."</h1>";
+echo "<h2>".$_GET ['periodo']."</h2>";
+
+echo "<h1>".$_GET ['nombre']."</h1>";
+echo "<h2>".$_GET ['apellido']."</h2>";
+
+if (is_numeric($_GET['numero']) && $_GET ['edad']>=1)
+{
+    echo "<h3> Bienvenido ".$_GET['nombre']. " ".$_GET['apellido']."</h3>";
+
+}
+else
+{
+    echo "<h3> No es un numero valido</h3>";
+}
 
 ?>
 
 <form>
-Ingrese un numero valido:
-<input name="numero" type="text" placeholder="INGRESE NUMERO" >
+Escribe tu nombre completo:
+<input name="nombre" type="text" placeholder="Escribe nombres" >
+<input name="apellido" type="text" placeholder="Escribe apellidos" >
+<input name="numero" type="text" placeholder="Escribe Edad" >
 <input type="submit" value="Evaluar">
 </form>
 
